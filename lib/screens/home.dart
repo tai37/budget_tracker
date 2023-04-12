@@ -1,9 +1,7 @@
+import 'package:budget_tracker/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 
 import '../pages/home_page.dart';
-//import '../pages/profile_page.dart';
-//import 'package:budget_tracker/pages/home_page.dart';
-//import 'package:budget_tracker/pages/profile_page.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
@@ -18,10 +16,7 @@ class _HomeState extends State<Home> {
     BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
   ];
 
-  List<Widget> pages = const [
-    HomePage()
-    //ProfilePage(),
-  ];
+  List<Widget> pages = const [HomePage(), ProfilePage()];
 
   int _currentPageIndex = 0;
 
